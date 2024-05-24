@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .pricing-table {
+            margin: 0 auto;
+            max-width: 950px;
+        }
+        .pricing-table th, .pricing-table td {
+            text-align: center;
+            padding: 20px;
+        }
+        .pricing-table th {
+            background-color: #343a40;
+            color: #1e88f2;
+        }
+        .pricing-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .pricing-table .plan-name {
+            background-color: #ff00bf;
+            color: #fff;
+            font-weight: bold;
+        }
+        .pricing-table .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pricing-table">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="plan-name">Basic</td>
+                    <td class="price">$9.99/month</td>
+                    <td>Feature 1, Feature 2, Feature 3</td>
+                </tr>
+                <tr>
+                    <td class="plan-name">Standard</td>
+                    <td class="price">$19.99/month</td>
+                    <td>Feature 1, Feature 2, Feature 3, Feature 4</td>
+                </tr>
+                <tr>
+                    <td class="plan-name">Premium</td>
+                    <td class="price">$29.99/month</td>
+                    <td>Feature 1, Feature 2, Feature 3, Feature 4, Feature 5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
