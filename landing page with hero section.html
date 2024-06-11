@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Hero Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+            background-size: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .btn-hero {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Welcome to Our Landing Page</h1>
+            <p class="hero-subtitle">We create amazing experiences</p>
+            <a href="#features" class="btn btn-primary btn-hero">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="features" class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Feature 1</h2>
+                <p>Detail about feature 1.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Feature 2</h2>
+                <p>Detail about feature 2.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Feature 3</h2>
+                <p>Detail about feature 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
