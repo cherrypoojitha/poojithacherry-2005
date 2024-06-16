@@ -1,0 +1,85 @@
+<div class="container">
+    <img src=""C:\Users\pooji\Desktop\doreomon2.png"" alt="Cherry">
+    <p>Hello. How are you today?</p>
+    <span class="time-right">11:00</span>
+  </div>
+  
+  <div class="container darker">
+    <img src=""C:\Users\pooji\Desktop\doreomon2.png"" alt="Avatar" class="right">
+    <p>Hey! I'm fine. Thanks for asking!</p>
+    <span class="time-left">11:01</span>
+  </div>
+  
+  <div class="container">
+    <img src=""C:\Users\pooji\Desktop\doreomon2.png"" alt="Cherry">
+    <p>Sweet! So, what do you wanna do today?</p>
+    <span class="time-right">11:02</span>
+  </div>
+  
+  <div class="container darker">
+    <img src=""C:\Users\pooji\Desktop\doreomon2.png"" alt="Avatar" class="right">
+    <p>Nah, I dunno. Play chess.. or learn more coding perhaps?</p>
+    <span class="time-left">11:05</span>
+  </div>
+
+  <div class="container">
+    <img src=""C:\Users\pooji\Desktop\doreomon2.png"" alt="Cherry">
+    <p>alright! lets go and play chess</p>
+    <span class="time-right">11:07</span>
+  </div>
+    
+
+  
+  
+  /* Chat containers */
+  .container {
+    border: 2px solid #ffeeaae;
+    background-color: #f111111;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #fff;
+    background-color: #ddd;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 200px;
+    border-radius: 100%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+  
+   
+    
